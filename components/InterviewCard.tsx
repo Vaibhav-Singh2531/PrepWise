@@ -17,9 +17,9 @@ const InterviewCard = async ({ id, userId, role, type, techstack, createdAt }: I
                 userId,
             })
             : null;
-    console.log("userId: ", userId);
-    console.log("id: ", id);
-    console.log("Feedback: ", feedback);
+    // console.log("userId: ", userId);
+    // console.log("id: ", id);
+    // console.log("Feedback: ", feedback);
     const normalizedType = /mix/gi.test(type) ? "Mixed" : type;
     const formattedDate = dayjs(feedback?.createdAt || createdAt || Date.now()).format('MMM D, YYYY');
 
