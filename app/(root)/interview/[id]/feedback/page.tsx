@@ -134,7 +134,7 @@ const page = async ({ params }: RouteParams) => {
 
 
   return (
-    <div className="min-h-screen bg-[rgba(249,243,243,0.05)]  text-white p-6">
+    <div className="min-h-screen bg-gradient-to-br from-purple-900/30 to-gray-900/50  text-white p-6">
       <div className="max-w-4xl mx-auto space-y-8">
         {/* Header Section */}
         <div className="text-center space-y-4">
@@ -151,7 +151,7 @@ const page = async ({ params }: RouteParams) => {
         </div>
 
         {/* Overall Score Card */}
-        <Card className="bg-gray-800 border-gray-700">
+        <Card className="bg-gray-900/50 border-gray-700">
           <CardHeader className="text-center">
             <CardTitle className="text-2xl text-white">Overall Impression</CardTitle>
           </CardHeader>
@@ -166,7 +166,7 @@ const page = async ({ params }: RouteParams) => {
                 className="mt-4 h-3"
               />
             </div>
-            <div className="bg-gray-700 rounded-lg p-4">
+            <div className="bg-gradient-to-br from-purple-900/30 to-gray-900/50 rounded-lg p-4">
               <h3 className="font-semibold text-lg mb-2 text-blue-400">Final Assessment</h3>
               <p className="text-gray-300 leading-relaxed">{feedbackData.finalAssessment}</p>
             </div>
@@ -174,7 +174,7 @@ const page = async ({ params }: RouteParams) => {
         </Card>
 
         {/* Category Scores */}
-        <Card className="bg-gray-800 border-gray-700">
+        <Card className="bg-gray-800/50 border-gray-700">
           <CardHeader>
             <CardTitle className="text-xl text-white">Detailed Scores by Category</CardTitle>
           </CardHeader>
@@ -199,7 +199,7 @@ const page = async ({ params }: RouteParams) => {
 
         {/* Strengths and Areas for Improvement */}
         <div className="grid md:grid-cols-2 gap-6">
-          <Card className="bg-gray-800 border-gray-700">
+          <Card className="bg-gray-900/50 border-gray-700">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-green-400">
                 <TrendingUp className="w-5 h-5" />
@@ -216,7 +216,7 @@ const page = async ({ params }: RouteParams) => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gray-800 border-gray-700">
+          <Card className="bg-gray-900/50 border-gray-700">
             <CardHeader>
               <CardTitle className="flex items-center gap-2 text-orange-400">
                 <TrendingDown className="w-5 h-5" />
